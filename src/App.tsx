@@ -32,13 +32,9 @@ type CartType = ItemType[] | [];
 
 function App() {
   const primaryColor = "#3aa39f";
-  const secondaryColor = "#a2a3b1";
-  const [heartStroke, setHeartStroke] = useState(primaryColor);
-  const [heartFill, setHeartFill] = useState("none");
   const [count, setCount] = useState<number>(1);
   const [colorIndex, setColorIndex] = useState<number>(1);
   const notify = (message: string) => toast.success(message);
-  const [WishlistButtonState, setWishListButtonState] = useState("");
   const [wishList, setWishList] = useState(new Set<number>());
 
   //cart
@@ -72,7 +68,7 @@ function App() {
     }
   };
 
-  const updateCart = (id) => {
+  const updateCart = (id: number) => {
     if (!cart.length) {
       let newCart: CartType = [{ id: 1, name: "Meryl Lounge Chair", src: '../src/assets/01.jpg', quantity: count, price: 149.99 }];
       setCart(newCart);
@@ -140,14 +136,13 @@ function App() {
 
   useEffect(() => {
     if (localStorage.getItem("cart")) {
-      let tmpCart = JSON.parse(localStorage.getItem("cart"))
+      let tmpCart = JSON.parse(localStorage.getItem("cart")??"")
       setCart(tmpCart);
     }
 
     if(localStorage.getItem("wishList")){
-      let tmpWishList = JSON.parse(localStorage.getItem("wishList"));
+      let tmpWishList = JSON.parse(localStorage.getItem("wishList")??"");
       setWishList(new Set(tmpWishList));
-      setWishListButtonState("active");
     }
   }, [])
 
@@ -239,7 +234,7 @@ function App() {
             </div>
             <div className='mt-12 flex flex-row justify-between'>
 
-              <SecondaryButton className="label medium" onClick={()=>handleWishListButtonClick(1)}><motion.div className='flex flex-row items-center' whileHover={{ scale: 1.2 }}><HeartIcon stroke={heartStroke} fill={wishList.has(1)?primaryColor:"none"} /><span className='ml-2'>Add to Wishlist</span></motion.div></SecondaryButton>
+              <SecondaryButton className="label medium" onClick={()=>handleWishListButtonClick(1)}><motion.div className='flex flex-row items-center' whileHover={{ scale: 1.2 }}><HeartIcon stroke={primaryColor} fill={wishList.has(1)?primaryColor:"none"} /><span className='ml-2'>Add to Wishlist</span></motion.div></SecondaryButton>
 
               <ul className='flex flex-row'>
                 <li className='p-2'><motion.a style={{ display: "block" }} href='#' whileHover={{ scale: 1.3 }}><FacebookIcon /></motion.a></li>

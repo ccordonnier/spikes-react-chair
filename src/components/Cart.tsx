@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import PrimaryButton from "./buttons/PrimaryButton";
 import SecondaryButton from "./buttons/SecondaryButton";
@@ -35,8 +35,6 @@ const TotalCount = (items: ItemType[]) => {
 }
 
 const Cart: React.FC<CartType> = ({ items, emptyCart }: { items: ItemType[], emptyCart: () => void }) => {
-
-  const [mouseOver, setMouseOver] = useState(false);
   return (
     <motion.div className=" text-center" variants={variants}>
       <h2 className="border-b-2  p-3 pb-4 ">Panier</h2>

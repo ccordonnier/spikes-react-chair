@@ -2,7 +2,7 @@ import { FC, PropsWithChildren } from "react";
 
 type SecondaryButtonType = PropsWithChildren<{
   className? : String,
-  onClick? : (id:number) => void,
+  onClick? : () => void,
 }>
 
 const PrimaryButton : FC<SecondaryButtonType> = ({className, onClick, children}) => {
