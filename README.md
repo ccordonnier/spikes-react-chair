@@ -3,7 +3,7 @@
 Développement en ReactJS afin de relevé le challenge de spikes-challenges, qui met à l'épreuve vos compétences en développement front-end. L'objectif est de réalisé une fiche produit en suivant les maquettes fournies et de l'animer avec la librairie Framer Motion.
 Le localStorage est utilisé pour stocker le panier et l'ajout à la WishList et React Hot Toast pour les notifications. 
 
-![alt text](https://github.com/ccordonnier/spikes-react-chair/master/public/images/vignette-Chair-developpement.png?raw=true)
+![alt text](https://raw.githubusercontent.com/ccordonnier/spikes-react-chair/master/public/images/vignette-Chair-developpement.png)
 
 
 - [Voir le projet](https://corentincordonnier.fr/#portfolio)
