@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Frame Motion + LocalStorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Développement en ReactJS afin de relevé le challenge de spikes-challenges, qui met à l'épreuve vos compétences en développement front-end. L'objectif est de réalisé une fiche produit en suivant les maquettes fournies et de l'animer avec la librairie Framer Motion.
+Le localStorage est utilisé pour stocker le panier et l'ajout à la WishList et React Hot Toast pour les notifications. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Voir le projet](https://corentincordonnier.fr/#portfolio)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Développeur React Freelance 
 
-- Configure the top-level `parserOptions` property like this:
+Je suis développeur web et mobile Freelance React, React Native et PHP. 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Vous souhaitez me contacter pour une missions ? 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- :email: [corentincordonnier@hotmail.fr](mailto:corentincordonnier@hotmail.fr)
+- :globe_with_meridians: [corentincordonnier.fr](https://corentincordonnier.fr)
+- :link: [Mon LinkedIn](https://www.linkedin.com/in/corentin-cordonnier-10b47412a/)
